@@ -1108,7 +1108,7 @@
 
 
 <h1 id="data.LegacyLoader" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">data</span><span class="o">.</span><span class="n">LegacyLoader</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">views</span><span class="p">,</span> <span class="n">json_files</span><span class="p">,</span> <span class="n">splits</span><span class="p">)</span></code>
+<code class="highlight language-python"><span class="n">data</span><span class="o">.</span><span class="n">LegacyLoader</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">splits</span><span class="p">,</span> <span class="n">views</span><span class="p">,</span> <span class="n">json_files</span><span class="p">)</span></code>
 
 </h1>
 
@@ -1153,13 +1153,24 @@
           </td>
         </tr>
         <tr>
+          <td><code>splits</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset splits</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
           <td><code>views</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a>]</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>List of view names</p>
+              <p>Dataset views</p>
             </div>
           </td>
         </tr>
@@ -1170,18 +1181,7 @@
           </td>
           <td>
             <div class="doc-md-description">
-              <p>dict {viewId: <path to json file>} paths relative to workspace</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>splits</code></td>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a>]</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>Dataset splits</p>
+              <p>json file paths relative to workspace</p>
             </div>
           </td>
         </tr>
@@ -1243,11 +1243,39 @@
               <em>required</em>
           </td>
         </tr>
+        <tr>
+          <td><code>views</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset views</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>json_files</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>json file paths relative to workspace</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
     </tbody>
   </table>
 
           <details class="quote">
-            <summary>Source code in <code>pixano/data/legacy_loader.py</code></summary>
+            <summary>Source code in <code>/home/corentin/Documents/SmartAnnotation/Code/pixano/pixano/data/legacy_loader.py</code></summary>
             <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">43</span>
 <span class="normal">44</span>
 <span class="normal">45</span>
@@ -1272,13 +1300,16 @@
 <span class="normal">64</span>
 <span class="normal">65</span>
 <span class="normal">66</span>
-<span class="normal">67</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
     <span class="bp">self</span><span class="p">,</span>
     <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">description</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">splits</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
     <span class="n">views</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
     <span class="n">json_files</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
-    <span class="n">splits</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Initialize Pixano Legacy Loader</span>
 
@@ -1286,9 +1317,12 @@
 <span class="sd">        name (str): Dataset name</span>
 <span class="sd">        description (str): Dataset description</span>
 <span class="sd">        splits (list[str]): Dataset splits</span>
+<span class="sd">        views (list[str]): Dataset views</span>
+<span class="sd">        json_files (dict[str, str]): json file paths relative to workspace</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">json_files</span> <span class="o">=</span> <span class="n">json_files</span>
+
     <span class="bp">self</span><span class="o">.</span><span class="n">views</span> <span class="o">=</span> <span class="n">views</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">json_files</span> <span class="o">=</span> <span class="n">json_files</span>
 
     <span class="c1"># Initialize Data Loader</span>
     <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -1344,7 +1378,7 @@
           </td>
           <td>
             <div class="doc-md-description">
-              <p>Input directory workspace (image directories are read from Pixano json files given at init)</p>
+              <p>Input directory workspace for json files and images</p>
             </div>
           </td>
           <td>
@@ -1405,11 +1439,8 @@
   </table>
 
       <details class="quote">
-        <summary>Source code in <code>pixano/data/legacy_loader.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 69</span>
-<span class="normal"> 70</span>
-<span class="normal"> 71</span>
-<span class="normal"> 72</span>
+        <summary>Source code in <code>/home/corentin/Documents/SmartAnnotation/Code/pixano/pixano/data/legacy_loader.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 72</span>
 <span class="normal"> 73</span>
 <span class="normal"> 74</span>
 <span class="normal"> 75</span>
@@ -1562,7 +1593,10 @@
 <span class="normal">222</span>
 <span class="normal">223</span>
 <span class="normal">224</span>
-<span class="normal">225</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">import_row</span><span class="p">(</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">import_row</span><span class="p">(</span>
     <span class="bp">self</span><span class="p">,</span>
     <span class="n">input_dirs</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">],</span>
     <span class="n">split</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -1571,7 +1605,7 @@
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Process dataset row for import</span>
 
 <span class="sd">    Args:</span>
-<span class="sd">        input_dirs (dict[str, Path]): Input directory workspace (image directories are read from Pixano json files given at init)</span>
+<span class="sd">        input_dirs (dict[str, Path]): Input directory workspace for json files and images</span>
 <span class="sd">        split (str): Dataset split</span>
 <span class="sd">        portable (bool, optional): True to move or download media files inside dataset. Defaults to False.</span>
 

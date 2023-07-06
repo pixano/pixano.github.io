@@ -558,9 +558,68 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          feature_statistics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         feature_statistics
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#analytics.feature_statistics.categorical_stats" class="md-nav__link">
+    categorical_stats()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analytics.feature_statistics.compute_additional_data" class="md-nav__link">
+    compute_additional_data()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analytics.feature_statistics.compute_stats" class="md-nav__link">
+    compute_stats()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analytics.feature_statistics.numerical_stats" class="md-nav__link">
+    numerical_stats()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analytics.feature_statistics.objects_tableToDF" class="md-nav__link">
+    objects_tableToDF()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1075,7 +1134,13 @@
 <div class="doc doc-object doc-module">
 
 
-<a id="analytics.feature_statistics"></a>
+
+<h1 id="analytics.feature_statistics" class="doc doc-heading">
+          <code>analytics.feature_statistics</code>
+
+
+</h1>
+
   <div class="doc doc-contents first">
 
   
@@ -1094,10 +1159,10 @@
 
 
 
-<h1 id="analytics.feature_statistics.categorical_stats" class="doc doc-heading">
+<h2 id="analytics.feature_statistics.categorical_stats" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">categorical_stats</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">split</span><span class="p">,</span> <span class="n">field_name</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1120,7 +1185,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="pandas" href="https://pandas.pydata.org/pandas-docs/version/1.5/index.html#module-pandas">pd</a>.<a class="autorefs autorefs-external" title="pandas.DataFrame" href="https://pandas.pydata.org/pandas-docs/version/1.5/reference/api/pandas.DataFrame.html#pandas.DataFrame">DataFrame</a></code>
           </td>
-          <td><p>Input DataFrame</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Input DataFrame</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1130,7 +1199,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>DataFrame split</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>DataFrame split</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1140,7 +1213,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Selected field</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Selected field</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1161,7 +1238,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a>]</code>
           </td>
-          <td><p>list[dict]: Feature statistics</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>list[dict]: Feature statistics</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1205,10 +1286,10 @@
 
 
 
-<h1 id="analytics.feature_statistics.compute_additional_data" class="doc doc-heading">
+<h2 id="analytics.feature_statistics.compute_additional_data" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">compute_additional_data</span><span class="p">(</span><span class="n">data_table</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1231,7 +1312,11 @@
           <td>
                 <code><span title="pyarrow">pa</span>.<a class="autorefs autorefs-external" title="pyarrow.Table" href="https://arrow.apache.org/docs/python/generated/pyarrow.Table.html#pyarrow.Table">Table</a></code>
           </td>
-          <td><p>Input Table</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Input Table</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1252,7 +1337,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="pandas" href="https://pandas.pydata.org/pandas-docs/version/1.5/index.html#module-pandas">pd</a>.<a class="autorefs autorefs-external" title="pandas.DataFrame" href="https://pandas.pydata.org/pandas-docs/version/1.5/reference/api/pandas.DataFrame.html#pandas.DataFrame">DataFrame</a></code>
           </td>
-          <td><p>pd.DataFrame: DataFrame with added resolution and aspect ratio</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>pd.DataFrame: DataFrame with added resolution and aspect ratio</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1316,10 +1405,10 @@
 
 
 
-<h1 id="analytics.feature_statistics.compute_stats" class="doc doc-heading">
+<h2 id="analytics.feature_statistics.compute_stats" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">compute_stats</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">split</span><span class="p">,</span> <span class="n">feature</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1342,7 +1431,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="pandas" href="https://pandas.pydata.org/pandas-docs/version/1.5/index.html#module-pandas">pd</a>.<a class="autorefs autorefs-external" title="pandas.DataFrame" href="https://pandas.pydata.org/pandas-docs/version/1.5/reference/api/pandas.DataFrame.html#pandas.DataFrame">DataFrame</a></code>
           </td>
-          <td><p>Input DataFrame</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Input DataFrame</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1352,7 +1445,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>DataFrame split</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>DataFrame split</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1362,7 +1459,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>Selected feature</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Selected feature</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1383,7 +1484,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a>]</code>
           </td>
-          <td><p>list[dict]: Feature statistics</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>list[dict]: Feature statistics</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1441,10 +1546,10 @@
 
 
 
-<h1 id="analytics.feature_statistics.numerical_stats" class="doc doc-heading">
+<h2 id="analytics.feature_statistics.numerical_stats" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">numerical_stats</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">split</span><span class="p">,</span> <span class="n">field_name</span><span class="p">,</span> <span class="n">field_range</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1467,7 +1572,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="pandas" href="https://pandas.pydata.org/pandas-docs/version/1.5/index.html#module-pandas">pd</a>.<a class="autorefs autorefs-external" title="pandas.DataFrame" href="https://pandas.pydata.org/pandas-docs/version/1.5/reference/api/pandas.DataFrame.html#pandas.DataFrame">DataFrame</a></code>
           </td>
-          <td><p>Input DataFrame</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Input DataFrame</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1477,7 +1586,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>DataFrame split</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>DataFrame split</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1487,7 +1600,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Selected field</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Selected field</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1497,7 +1614,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a>]</code>
           </td>
-          <td><p>Selected field range. Defaults to None.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Selected field range. Defaults to None.</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1518,7 +1639,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a>]</code>
           </td>
-          <td><p>list[dict]: Feature statistics</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>list[dict]: Feature statistics</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1584,10 +1709,10 @@
 
 
 
-<h1 id="analytics.feature_statistics.objects_tableToDF" class="doc doc-heading">
+<h2 id="analytics.feature_statistics.objects_tableToDF" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">objects_tableToDF</span><span class="p">(</span><span class="n">data_table</span><span class="p">,</span> <span class="n">field</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1610,7 +1735,11 @@
           <td>
                 <code><span title="pyarrow">pa</span>.<a class="autorefs autorefs-external" title="pyarrow.Table" href="https://arrow.apache.org/docs/python/generated/pyarrow.Table.html#pyarrow.Table">Table</a></code>
           </td>
-          <td><p>Table with an objects column</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Table with an objects column</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1620,7 +1749,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Selected field from the objects column</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Selected field from the objects column</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1641,7 +1774,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="pandas" href="https://pandas.pydata.org/pandas-docs/version/1.5/index.html#module-pandas">pd</a>.<a class="autorefs autorefs-external" title="pandas.DataFrame" href="https://pandas.pydata.org/pandas-docs/version/1.5/reference/api/pandas.DataFrame.html#pandas.DataFrame">DataFrame</a></code>
           </td>
-          <td><p>pd.DataFrame: Selected field as DataFrame</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>pd.DataFrame: Selected field as DataFrame</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>

@@ -896,9 +896,40 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          LegacyLoader
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         LegacyLoader
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data.legacy_loader.LegacyLoader.import_row" class="md-nav__link">
+    import_row()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1075,7 +1106,13 @@
 <div class="doc doc-object doc-class">
 
 
-<a id="data.LegacyLoader"></a>
+
+<h1 id="data.LegacyLoader" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">data</span><span class="o">.</span><span class="n">LegacyLoader</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">views</span><span class="p">,</span> <span class="n">json_files</span><span class="p">,</span> <span class="n">splits</span><span class="p">)</span></code>
+
+</h1>
+
+
   <div class="doc doc-contents first">
       <p class="doc doc-class-bases">
         Bases: <code><a class="autorefs autorefs-internal" title="data.data_loader.DataLoader" href="../data_loader/#data.DataLoader">DataLoader</a></code></p>
@@ -1098,35 +1135,55 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Dataset name</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset name</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>description</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Dataset description</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset description</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>views</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>List of view names</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of view names</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>json_files</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>dict {viewId: <path to json file>} paths relative to workspace</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>dict {viewId: <path to json file>} paths relative to workspace</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>splits</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>Dataset splits</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset splits</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1149,7 +1206,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Dataset name</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset name</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1159,7 +1220,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Dataset description</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset description</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1169,7 +1234,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>Dataset splits</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset splits</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1247,10 +1316,10 @@
 
 
 
-<h1 id="data.legacy_loader.LegacyLoader.import_row" class="doc doc-heading">
+<h2 id="data.legacy_loader.LegacyLoader.import_row" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">import_row</span><span class="p">(</span><span class="n">input_dirs</span><span class="p">,</span> <span class="n">split</span><span class="p">,</span> <span class="n">portable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1273,7 +1342,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path">Path</a>]</code>
           </td>
-          <td><p>Input directory workspace (image directories are read from Pixano json files given at init)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Input directory workspace (image directories are read from Pixano json files given at init)</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1283,7 +1356,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Dataset split</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset split</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1293,7 +1370,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#bool">bool</a></code>
           </td>
-          <td><p>True to move or download media files inside dataset. Defaults to False.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>True to move or download media files inside dataset. Defaults to False.</p>
+            </div>
+          </td>
           <td>
                 <code>False</code>
           </td>
@@ -1314,7 +1395,11 @@
 <td><code>Iterator</code></td>          <td>
                 <code><a class="autorefs autorefs-external" title="collections.abc.Iterator" href="https://docs.python.org/3.10/library/collections.abc.html#collections.abc.Iterator">Iterator</a></code>
           </td>
-          <td><p>Processed rows</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Processed rows</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>

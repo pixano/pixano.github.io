@@ -679,9 +679,81 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          serve
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         serve
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#apps.core.serve.PixanoApp" class="md-nav__link">
+    PixanoApp
+  </a>
+  
+    <nav class="md-nav" aria-label="PixanoApp">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apps.core.serve.PixanoApp.display" class="md-nav__link">
+    display()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apps.core.serve.display_cli" class="md-nav__link">
+    display_cli()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apps.core.serve.display_colab" class="md-nav__link">
+    display_colab()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apps.core.serve.display_ipython" class="md-nav__link">
+    display_ipython()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apps.core.serve.get_env" class="md-nav__link">
+    get_env()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1077,7 +1149,13 @@
 <div class="doc doc-object doc-module">
 
 
-<a id="apps.core.serve"></a>
+
+<h1 id="apps.core.serve" class="doc doc-heading">
+          <code>apps.core.serve</code>
+
+
+</h1>
+
   <div class="doc doc-contents first">
 
   
@@ -1095,10 +1173,10 @@
 
 
 
-<h1 id="apps.core.serve.PixanoApp" class="doc doc-heading">
+<h2 id="apps.core.serve.PixanoApp" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">PixanoApp</span><span class="p">(</span><span class="n">library_dir</span><span class="p">,</span> <span class="n">assets_path</span><span class="p">,</span> <span class="n">template_path</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8000</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1121,28 +1199,44 @@
           <td>
                 <code>uvicorn.<span title="uvicorn.Config">Config</span></code>
           </td>
-          <td><p>App config</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>App config</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>server</code></td>
           <td>
                 <code>uvicorn.<span title="uvicorn.Server">Server</span></code>
           </td>
-          <td><p>App server</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>App server</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>task_function</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/typing.html#module-typing">typing</a>.<a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3.10/library/typing.html#typing.Callable">Callable</a></code>
           </td>
-          <td><p>Run task function for running environment</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Run task function for running environment</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>display_function</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/typing.html#module-typing">typing</a>.<a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3.10/library/typing.html#typing.Callable">Callable</a></code>
           </td>
-          <td><p>Display function for running environment</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Display function for running environment</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1165,7 +1259,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Dataset library directory</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset library directory</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1175,7 +1273,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>App host. Defaults to "127.0.0.1".</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>App host. Defaults to "127.0.0.1".</p>
+            </div>
+          </td>
           <td>
                 <code>&#39;127.0.0.1&#39;</code>
           </td>
@@ -1185,7 +1287,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>App port. Defaults to 8000.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>App port. Defaults to 8000.</p>
+            </div>
+          </td>
           <td>
                 <code>8000</code>
           </td>
@@ -1299,10 +1405,10 @@
 
 
 
-<h2 id="apps.core.serve.PixanoApp.display" class="doc doc-heading">
+<h3 id="apps.core.serve.PixanoApp.display" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">display</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span></code>
 
-</h2>
+</h3>
 
 
   <div class="doc doc-contents ">
@@ -1325,7 +1431,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Frame height. Defaults to 1000.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Frame height. Defaults to 1000.</p>
+            </div>
+          </td>
           <td>
                 <code>1000</code>
           </td>
@@ -1389,10 +1499,10 @@
 
 
 
-<h1 id="apps.core.serve.display_cli" class="doc doc-heading">
+<h2 id="apps.core.serve.display_cli" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">display_cli</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1415,7 +1525,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Pixano app URL</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Pixano app URL</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1425,7 +1539,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Pixano app port</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Pixano app port</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1435,7 +1553,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Frame height</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Frame height</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1474,10 +1596,10 @@
 
 
 
-<h1 id="apps.core.serve.display_colab" class="doc doc-heading">
+<h2 id="apps.core.serve.display_colab" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">display_colab</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1500,7 +1622,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Pixano app URL</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Pixano app URL</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1510,7 +1636,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Pixano app port</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Pixano app port</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1520,7 +1650,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Frame height</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Frame height</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1615,10 +1749,10 @@
 
 
 
-<h1 id="apps.core.serve.display_ipython" class="doc doc-heading">
+<h2 id="apps.core.serve.display_ipython" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">display_ipython</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1641,7 +1775,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Pixano app URL</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Pixano app URL</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1651,7 +1789,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Pixano app port</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Pixano app port</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1661,7 +1803,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Frame height</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Frame height</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1762,10 +1908,10 @@
 
 
 
-<h1 id="apps.core.serve.get_env" class="doc doc-heading">
+<h2 id="apps.core.serve.get_env" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">get_env</span><span class="p">()</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1785,7 +1931,11 @@
 <td><code>str</code></td>          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Running environment</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Running environment</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>

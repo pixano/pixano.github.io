@@ -948,9 +948,68 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          InferenceModel
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         InferenceModel
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#models.inference_model.InferenceModel.create_json" class="md-nav__link">
+    create_json()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models.inference_model.InferenceModel.embedding_batch" class="md-nav__link">
+    embedding_batch()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models.inference_model.InferenceModel.export_to_onnx" class="md-nav__link">
+    export_to_onnx()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models.inference_model.InferenceModel.inference_batch" class="md-nav__link">
+    inference_batch()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models.inference_model.InferenceModel.process_dataset" class="md-nav__link">
+    process_dataset()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1075,7 +1134,13 @@
 <div class="doc doc-object doc-class">
 
 
-<a id="models.InferenceModel"></a>
+
+<h1 id="models.InferenceModel" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">models</span><span class="o">.</span><span class="n">InferenceModel</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">info</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span></code>
+
+</h1>
+
+
   <div class="doc doc-contents first">
       <p class="doc doc-class-bases">
         Bases: <code><a class="autorefs autorefs-external" title="abc.ABC" href="https://docs.python.org/3.10/library/abc.html#abc.ABC">ABC</a></code></p>
@@ -1098,35 +1163,55 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Model name</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Model name</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>id</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Model ID</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Model ID</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>device</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Model GPU or CPU device</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Model GPU or CPU device</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>source</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Model source</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Model source</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>info</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Additional model info</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Additional model info</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1149,7 +1234,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Model name</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Model name</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1159,7 +1248,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Model ID. Defaults to "".</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Model ID. Defaults to "".</p>
+            </div>
+          </td>
           <td>
                 <code>&#39;&#39;</code>
           </td>
@@ -1169,7 +1262,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Model GPU or CPU device. Defaults to "".</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Model GPU or CPU device. Defaults to "".</p>
+            </div>
+          </td>
           <td>
                 <code>&#39;&#39;</code>
           </td>
@@ -1179,7 +1276,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Model source. Defaults to "".</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Model source. Defaults to "".</p>
+            </div>
+          </td>
           <td>
                 <code>&#39;&#39;</code>
           </td>
@@ -1189,7 +1290,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Additional model info. Defaults to "".</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Additional model info. Defaults to "".</p>
+            </div>
+          </td>
           <td>
                 <code>&#39;&#39;</code>
           </td>
@@ -1269,10 +1374,10 @@
 
 
 
-<h1 id="models.inference_model.InferenceModel.create_json" class="doc doc-heading">
+<h2 id="models.inference_model.InferenceModel.create_json" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">create_json</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">spec_json</span><span class="p">,</span> <span class="n">num_elements</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1295,7 +1400,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path">Path</a></code>
           </td>
-          <td><p>Output dataset directory</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Output dataset directory</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1305,7 +1414,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Output .json filename</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Output .json filename</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1315,7 +1428,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>Input dataset .json</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Input dataset .json</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1325,7 +1442,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Number of processed rows</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Number of processed rows</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1420,10 +1541,10 @@
 
 
 
-<h1 id="models.inference_model.InferenceModel.embedding_batch" class="doc doc-heading">
+<h2 id="models.inference_model.InferenceModel.embedding_batch" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">embedding_batch</span><span class="p">(</span><span class="n">batch</span><span class="p">,</span> <span class="n">view</span><span class="p">,</span> <span class="n">uri_prefix</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1446,7 +1567,11 @@
           <td>
                 <code><span title="pyarrow">pa</span>.<a class="autorefs autorefs-external" title="pyarrow.RecordBatch" href="https://arrow.apache.org/docs/python/generated/pyarrow.RecordBatch.html#pyarrow.RecordBatch">RecordBatch</a></code>
           </td>
-          <td><p>Input batch</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Input batch</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1456,7 +1581,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Dataset view</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset view</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1466,7 +1595,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>URI prefix for media files</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>URI prefix for media files</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1487,7 +1620,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" title="numpy" href="https://numpy.org/doc/1.23/reference/index.html#module-numpy">np</a>.<a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/1.23/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a>]</code>
           </td>
-          <td><p>list[np.ndarray]: Model embeddings as NumPy arrays</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>list[np.ndarray]: Model embeddings as NumPy arrays</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1539,10 +1676,10 @@
 
 
 
-<h1 id="models.inference_model.InferenceModel.export_to_onnx" class="doc doc-heading">
+<h2 id="models.inference_model.InferenceModel.export_to_onnx" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">export_to_onnx</span><span class="p">(</span><span class="n">library_dir</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1565,7 +1702,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path">Path</a></code>
           </td>
-          <td><p>Dataset library directory</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset library directory</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1600,10 +1741,10 @@
 
 
 
-<h1 id="models.inference_model.InferenceModel.inference_batch" class="doc doc-heading">
+<h2 id="models.inference_model.InferenceModel.inference_batch" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">inference_batch</span><span class="p">(</span><span class="n">batch</span><span class="p">,</span> <span class="n">view</span><span class="p">,</span> <span class="n">uri_prefix</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1626,7 +1767,11 @@
           <td>
                 <code><span title="pyarrow">pa</span>.<a class="autorefs autorefs-external" title="pyarrow.RecordBatch" href="https://arrow.apache.org/docs/python/generated/pyarrow.RecordBatch.html#pyarrow.RecordBatch">RecordBatch</a></code>
           </td>
-          <td><p>Input batch</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Input batch</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1636,7 +1781,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Dataset view</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset view</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1646,7 +1795,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>URI prefix for media files</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>URI prefix for media files</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1656,7 +1809,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a></code>
           </td>
-          <td><p>Confidence threshold. Defaults to 0.0.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Confidence threshold. Defaults to 0.0.</p>
+            </div>
+          </td>
           <td>
                 <code>0.0</code>
           </td>
@@ -1677,7 +1834,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<span title="pixano.core.arrow_types">arrow_types</span>.<span title="pixano.core.arrow_types.ObjectAnnotation">ObjectAnnotation</span>]]</code>
           </td>
-          <td><p>list[list[arrow_types.ObjectAnnotation]]: Model inferences as lists of ObjectAnnotation</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>list[list[arrow_types.ObjectAnnotation]]: Model inferences as lists of ObjectAnnotation</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1733,10 +1894,10 @@
 
 
 
-<h1 id="models.inference_model.InferenceModel.process_dataset" class="doc doc-heading">
+<h2 id="models.inference_model.InferenceModel.process_dataset" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">process_dataset</span><span class="p">(</span><span class="n">input_dir</span><span class="p">,</span> <span class="n">process_type</span><span class="p">,</span> <span class="n">views</span><span class="p">,</span> <span class="n">splits</span><span class="o">=</span><span class="p">[],</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1759,7 +1920,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path">Path</a></code>
           </td>
-          <td><p>Input dataset directory</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Input dataset directory</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1769,7 +1934,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Process type ('infer' for inference preannotation or 'embed' for embedding precomputing)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Process type ('infer' for inference preannotation or 'embed' for embedding precomputing)</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1779,7 +1948,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>Dataset views</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset views</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1789,7 +1962,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>Dataset splits, all if []. Defaults to [].</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset splits, all if []. Defaults to [].</p>
+            </div>
+          </td>
           <td>
                 <code>[]</code>
           </td>
@@ -1799,7 +1976,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Rows per batch. Defaults to 1.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Rows per batch. Defaults to 1.</p>
+            </div>
+          </td>
           <td>
                 <code>1</code>
           </td>
@@ -1809,7 +1990,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a></code>
           </td>
-          <td><p>Confidence threshold for predictions. Defaults to 0.0.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Confidence threshold for predictions. Defaults to 0.0.</p>
+            </div>
+          </td>
           <td>
                 <code>0.0</code>
           </td>
@@ -1830,7 +2015,11 @@
 <td><code>Path</code></td>          <td>
                 <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path">Path</a></code>
           </td>
-          <td><p>Output dataset directory</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Output dataset directory</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>

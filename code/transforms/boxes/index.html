@@ -1004,9 +1004,82 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          boxes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         boxes
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.boxes.denormalize" class="md-nav__link">
+    denormalize()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.boxes.format_bbox" class="md-nav__link">
+    format_bbox()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.boxes.mask_to_bbox" class="md-nav__link">
+    mask_to_bbox()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.boxes.normalize" class="md-nav__link">
+    normalize()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.boxes.urle_to_bbox" class="md-nav__link">
+    urle_to_bbox()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.boxes.xywh_to_xyxy" class="md-nav__link">
+    xywh_to_xyxy()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.boxes.xyxy_to_xywh" class="md-nav__link">
+    xyxy_to_xywh()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1075,7 +1148,13 @@
 <div class="doc doc-object doc-module">
 
 
-<a id="transforms.boxes"></a>
+
+<h1 id="transforms.boxes" class="doc doc-heading">
+          <code>transforms.boxes</code>
+
+
+</h1>
+
   <div class="doc doc-contents first">
 
   
@@ -1094,10 +1173,10 @@
 
 
 
-<h1 id="transforms.boxes.denormalize" class="doc doc-heading">
+<h2 id="transforms.boxes.denormalize" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">denormalize</span><span class="p">(</span><span class="n">coord</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1120,7 +1199,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a>]</code>
           </td>
-          <td><p>Normalized coordinates</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Normalized coordinates</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1130,7 +1213,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Height</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Height</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1140,7 +1227,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Width</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Width</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1161,7 +1252,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a>]</code>
           </td>
-          <td><p>list[float]: Unnormalized coordinates</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>list[float]: Unnormalized coordinates</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1219,10 +1314,10 @@
 
 
 
-<h1 id="transforms.boxes.format_bbox" class="doc doc-heading">
+<h2 id="transforms.boxes.format_bbox" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">format_bbox</span><span class="p">(</span><span class="n">bbox</span><span class="p">,</span> <span class="n">is_predicted</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">confidence</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1245,7 +1340,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a>]</code>
           </td>
-          <td><p>Bounding box</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Bounding box</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1255,7 +1354,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#bool">bool</a></code>
           </td>
-          <td><p>True for prediction, False for ground truth. Defaults to False.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>True for prediction, False for ground truth. Defaults to False.</p>
+            </div>
+          </td>
           <td>
                 <code>False</code>
           </td>
@@ -1265,7 +1368,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a></code>
           </td>
-          <td><p>Bounding box confidence. Defaults to None.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Bounding box confidence. Defaults to None.</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1286,7 +1393,11 @@
 <td><code>dict</code></td>          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>Bounding box in frontend format</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Bounding box in frontend format</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1342,10 +1453,10 @@
 
 
 
-<h1 id="transforms.boxes.mask_to_bbox" class="doc doc-heading">
+<h2 id="transforms.boxes.mask_to_bbox" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">mask_to_bbox</span><span class="p">(</span><span class="n">mask</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1368,7 +1479,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="numpy" href="https://numpy.org/doc/1.23/reference/index.html#module-numpy">np</a>.<a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/1.23/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
           </td>
-          <td><p>Mask as NumPy Array</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask as NumPy Array</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1389,7 +1504,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a>]</code>
           </td>
-          <td><p>list[float]: Normalized xywh bounding box</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>list[float]: Normalized xywh bounding box</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1457,10 +1576,10 @@
 
 
 
-<h1 id="transforms.boxes.normalize" class="doc doc-heading">
+<h2 id="transforms.boxes.normalize" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">normalize</span><span class="p">(</span><span class="n">coord</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1483,7 +1602,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a>]</code>
           </td>
-          <td><p>Unnormalized coordinates</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Unnormalized coordinates</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1493,7 +1616,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Height</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Height</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1503,7 +1630,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Width</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Width</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1524,7 +1655,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a>]</code>
           </td>
-          <td><p>list[float]: Normalized coordinates</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>list[float]: Normalized coordinates</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1582,10 +1717,10 @@
 
 
 
-<h1 id="transforms.boxes.urle_to_bbox" class="doc doc-heading">
+<h2 id="transforms.boxes.urle_to_bbox" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">urle_to_bbox</span><span class="p">(</span><span class="n">urle</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1608,7 +1743,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>Mask as uncompressed RLE</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask as uncompressed RLE</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1629,7 +1768,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a>]</code>
           </td>
-          <td><p>list[float]: Normalized xywh bounding box</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>list[float]: Normalized xywh bounding box</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1667,10 +1810,10 @@
 
 
 
-<h1 id="transforms.boxes.xywh_to_xyxy" class="doc doc-heading">
+<h2 id="transforms.boxes.xywh_to_xyxy" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">xywh_to_xyxy</span><span class="p">(</span><span class="n">xywh</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1693,7 +1836,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a>]</code>
           </td>
-          <td><p>xywh coordinates</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>xywh coordinates</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1714,7 +1861,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a>]</code>
           </td>
-          <td><p>list[float]: xyxy coordinates</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>list[float]: xyxy coordinates</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1762,10 +1913,10 @@
 
 
 
-<h1 id="transforms.boxes.xyxy_to_xywh" class="doc doc-heading">
+<h2 id="transforms.boxes.xyxy_to_xywh" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">xyxy_to_xywh</span><span class="p">(</span><span class="n">xyxy</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1788,7 +1939,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a>]</code>
           </td>
-          <td><p>xyxy coordinates</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>xyxy coordinates</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1809,7 +1964,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a>]</code>
           </td>
-          <td><p>list[float]: xywh coordinates</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>list[float]: xywh coordinates</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>

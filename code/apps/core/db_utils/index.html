@@ -651,9 +651,68 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          db_utils
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         db_utils
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#apps.core.db_utils.Feature" class="md-nav__link">
+    Feature
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apps.core.db_utils.get_item_details" class="md-nav__link">
+    get_item_details()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apps.core.db_utils.get_item_view_embedding" class="md-nav__link">
+    get_item_view_embedding()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apps.core.db_utils.get_items" class="md-nav__link">
+    get_items()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apps.core.db_utils.update_annotations" class="md-nav__link">
+    update_annotations()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1077,7 +1136,13 @@
 <div class="doc doc-object doc-module">
 
 
-<a id="apps.core.db_utils"></a>
+
+<h1 id="apps.core.db_utils" class="doc doc-heading">
+          <code>apps.core.db_utils</code>
+
+
+</h1>
+
   <div class="doc doc-contents first">
 
   
@@ -1095,11 +1160,11 @@
 
 
 
-<h1 id="apps.core.db_utils.Feature" class="doc doc-heading">
+<h2 id="apps.core.db_utils.Feature" class="doc doc-heading">
         <code>Feature</code>
 
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1124,21 +1189,33 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Feature name</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Feature name</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>dtype</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Feature dtype</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Feature dtype</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>value</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3.10/library/typing.html#typing.Any">Any</a></code>
           </td>
-          <td><p>Feature value</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Feature value</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1170,10 +1247,10 @@
 
 
 
-<h1 id="apps.core.db_utils.get_item_details" class="doc doc-heading">
+<h2 id="apps.core.db_utils.get_item_details" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">get_item_details</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">item_id</span><span class="p">,</span> <span class="n">media_dir</span><span class="p">,</span> <span class="n">inf_datasets</span><span class="o">=</span><span class="p">[])</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1196,7 +1273,11 @@
           <td>
                 <code><span title="pyarrow.dataset">ds</span>.<a class="autorefs autorefs-external" title="pyarrow.dataset.Dataset" href="https://arrow.apache.org/docs/python/generated/pyarrow.dataset.Dataset.html#pyarrow.dataset.Dataset">Dataset</a></code>
           </td>
-          <td><p>Dataset</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1206,7 +1287,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Selected item ID</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Selected item ID</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1216,7 +1301,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path">Path</a></code>
           </td>
-          <td><p>Dataset media directory</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset media directory</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1226,7 +1315,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<span title="pyarrow.dataset">ds</span>.<a class="autorefs autorefs-external" title="pyarrow.dataset.Dataset" href="https://arrow.apache.org/docs/python/generated/pyarrow.dataset.Dataset.html#pyarrow.dataset.Dataset">Dataset</a>]</code>
           </td>
-          <td><p>List of inference datasets. Defaults to [].</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of inference datasets. Defaults to [].</p>
+            </div>
+          </td>
           <td>
                 <code>[]</code>
           </td>
@@ -1247,7 +1340,11 @@
 <td><code>dict</code></td>          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>ImageDetails features for UI</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>ImageDetails features for UI</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1473,10 +1570,10 @@
 
 
 
-<h1 id="apps.core.db_utils.get_item_view_embedding" class="doc doc-heading">
+<h2 id="apps.core.db_utils.get_item_view_embedding" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">get_item_view_embedding</span><span class="p">(</span><span class="n">emb_ds</span><span class="p">,</span> <span class="n">item_id</span><span class="p">,</span> <span class="n">view</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1499,7 +1596,11 @@
           <td>
                 <code><span title="pyarrow.dataset">ds</span>.<a class="autorefs autorefs-external" title="pyarrow.dataset.Dataset" href="https://arrow.apache.org/docs/python/generated/pyarrow.dataset.Dataset.html#pyarrow.dataset.Dataset">Dataset</a></code>
           </td>
-          <td><p>Embedding dataset</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Embedding dataset</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1509,7 +1610,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Item ID</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Item ID</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1519,7 +1624,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Item embedding view</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Item embedding view</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1540,7 +1649,11 @@
 <td><code>bytes</code></td>          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#bytes">bytes</a></code>
           </td>
-          <td><p>Embedding in base 64</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Embedding in base 64</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1588,10 +1701,10 @@
 
 
 
-<h1 id="apps.core.db_utils.get_items" class="doc doc-heading">
+<h2 id="apps.core.db_utils.get_items" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">get_items</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1614,7 +1727,11 @@
           <td>
                 <code><span title="pyarrow">pa</span>.<span title="pyarrow.Dataset">Dataset</span></code>
           </td>
-          <td><p>Dataset</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1624,7 +1741,11 @@
           <td>
                 <code><span title="fastapi_pagination.bases.AbstractParams">AbstractParams</span></code>
           </td>
-          <td><p>FastAPI params for pagination. Defaults to None.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>FastAPI params for pagination. Defaults to None.</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1645,7 +1766,11 @@
 <td><code>AbstractPage</code></td>          <td>
                 <code><span title="fastapi_pagination.bases.AbstractPage">AbstractPage</span></code>
           </td>
-          <td><p>List of Features for UI (DatasetExplorer)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of Features for UI (DatasetExplorer)</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1781,10 +1906,10 @@
 
 
 
-<h1 id="apps.core.db_utils.update_annotations" class="doc doc-heading">
+<h2 id="apps.core.db_utils.update_annotations" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">update_annotations</span><span class="p">(</span><span class="n">dataset_dir</span><span class="p">,</span> <span class="n">item_id</span><span class="p">,</span> <span class="n">annotations</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1807,7 +1932,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path">Path</a></code>
           </td>
-          <td><p>Dataset directory</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset directory</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1817,7 +1946,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Item ID</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Item ID</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1827,7 +1960,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<span title="pixano.core.arrow_types">arrow_types</span>.<span title="pixano.core.arrow_types.ObjectAnnotation">ObjectAnnotation</span>]</code>
           </td>
-          <td><p>Item annotations</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Item annotations</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>

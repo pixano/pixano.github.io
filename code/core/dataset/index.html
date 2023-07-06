@@ -780,9 +780,61 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          dataset
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         dataset
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core.dataset.Dataset" class="md-nav__link">
+    Dataset
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core.dataset.DatasetInfo" class="md-nav__link">
+    DatasetInfo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core.dataset.EmbeddingDataset" class="md-nav__link">
+    EmbeddingDataset
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core.dataset.InferenceDataset" class="md-nav__link">
+    InferenceDataset
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1075,7 +1127,13 @@
 <div class="doc doc-object doc-module">
 
 
-<a id="core.dataset"></a>
+
+<h1 id="core.dataset" class="doc doc-heading">
+          <code>core.dataset</code>
+
+
+</h1>
+
   <div class="doc doc-contents first">
 
   
@@ -1093,10 +1151,10 @@
 
 
 
-<h1 id="core.dataset.Dataset" class="doc doc-heading">
+<h2 id="core.dataset.Dataset" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">Dataset</span><span class="p">(</span><span class="n">path</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1119,21 +1177,33 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path">Path</a></code>
           </td>
-          <td><p>Dataset path</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset path</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>_info</code></td>
           <td>
                 <code><a class="autorefs autorefs-internal" title="core.dataset.DatasetInfo" href="#core.dataset.DatasetInfo">DatasetInfo</a></code>
           </td>
-          <td><p>Dataset info</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset info</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>_partitioning</code></td>
           <td>
                 <code><span title="pyarrow.dataset">ds</span>.<a class="autorefs autorefs-external" title="pyarrow.dataset.partitioning" href="https://arrow.apache.org/docs/python/generated/pyarrow.dataset.partitioning.html#pyarrow.dataset.partitioning">partitioning</a></code>
           </td>
-          <td><p>Dataset partitioning</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset partitioning</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1156,7 +1226,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path">Path</a></code>
           </td>
-          <td><p>Dataset path</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset path</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1210,11 +1284,11 @@
 
 
 
-<h1 id="core.dataset.DatasetInfo" class="doc doc-heading">
+<h2 id="core.dataset.DatasetInfo" class="doc doc-heading">
         <code>DatasetInfo</code>
 
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1239,42 +1313,66 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Dataset ID</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset ID</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>name</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Dataset name</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset name</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>description</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Dataset description</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset description</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>num_elements</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Number of elements in dataset</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Number of elements in dataset</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>preview</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Dataset preview</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset preview</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>categories</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a>]</code>
           </td>
-          <td><p>Dataset categories</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset categories</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1305,10 +1403,10 @@
 
 
 
-<h1 id="core.dataset.EmbeddingDataset" class="doc doc-heading">
+<h2 id="core.dataset.EmbeddingDataset" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">EmbeddingDataset</span><span class="p">(</span><span class="n">path</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1333,21 +1431,33 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path">Path</a></code>
           </td>
-          <td><p>Dataset path</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset path</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>_info</code></td>
           <td>
                 <code><a class="autorefs autorefs-internal" title="core.dataset.DatasetInfo" href="#core.dataset.DatasetInfo">DatasetInfo</a></code>
           </td>
-          <td><p>Dataset info</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset info</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>_partitioning</code></td>
           <td>
                 <code><span title="pyarrow.dataset">ds</span>.<a class="autorefs autorefs-external" title="pyarrow.dataset.partitioning" href="https://arrow.apache.org/docs/python/generated/pyarrow.dataset.partitioning.html#pyarrow.dataset.partitioning">partitioning</a></code>
           </td>
-          <td><p>Dataset partitioning</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset partitioning</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1387,10 +1497,10 @@
 
 
 
-<h1 id="core.dataset.InferenceDataset" class="doc doc-heading">
+<h2 id="core.dataset.InferenceDataset" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">InferenceDataset</span><span class="p">(</span><span class="n">path</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1415,21 +1525,33 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path">Path</a></code>
           </td>
-          <td><p>Dataset path</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset path</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>_info</code></td>
           <td>
                 <code><a class="autorefs autorefs-internal" title="core.dataset.DatasetInfo" href="#core.dataset.DatasetInfo">DatasetInfo</a></code>
           </td>
-          <td><p>Dataset info</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset info</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>_partitioning</code></td>
           <td>
                 <code><span title="pyarrow.dataset">ds</span>.<a class="autorefs autorefs-external" title="pyarrow.dataset.partitioning" href="https://arrow.apache.org/docs/python/generated/pyarrow.dataset.partitioning.html#pyarrow.dataset.partitioning">partitioning</a></code>
           </td>
-          <td><p>Dataset partitioning</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset partitioning</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>

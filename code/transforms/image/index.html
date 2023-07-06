@@ -1018,9 +1018,124 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          image
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         image
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.image.binary_to_url" class="md-nav__link">
+    binary_to_url()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.image.depth_array_to_gray" class="md-nav__link">
+    depth_array_to_gray()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.image.depth_file_to_binary" class="md-nav__link">
+    depth_file_to_binary()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.image.encode_rle" class="md-nav__link">
+    encode_rle()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.image.image_to_binary" class="md-nav__link">
+    image_to_binary()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.image.image_to_thumbnail" class="md-nav__link">
+    image_to_thumbnail()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.image.mask_to_polygons" class="md-nav__link">
+    mask_to_polygons()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.image.mask_to_rle" class="md-nav__link">
+    mask_to_rle()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.image.polygons_to_rle" class="md-nav__link">
+    polygons_to_rle()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.image.rle_to_mask" class="md-nav__link">
+    rle_to_mask()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.image.rle_to_polygons" class="md-nav__link">
+    rle_to_polygons()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.image.rle_to_urle" class="md-nav__link">
+    rle_to_urle()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforms.image.urle_to_rle" class="md-nav__link">
+    urle_to_rle()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1075,7 +1190,13 @@
 <div class="doc doc-object doc-module">
 
 
-<a id="transforms.image"></a>
+
+<h1 id="transforms.image" class="doc doc-heading">
+          <code>transforms.image</code>
+
+
+</h1>
+
   <div class="doc doc-contents first">
 
   
@@ -1094,10 +1215,10 @@
 
 
 
-<h1 id="transforms.image.binary_to_url" class="doc doc-heading">
+<h2 id="transforms.image.binary_to_url" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">binary_to_url</span><span class="p">(</span><span class="n">im_bytes</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1120,7 +1241,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#bytes">bytes</a></code>
           </td>
-          <td><p>Image as binary</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Image as binary</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1141,7 +1266,11 @@
 <td><code>str</code></td>          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Image as base 64</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Image as base 64</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1187,10 +1316,10 @@
 
 
 
-<h1 id="transforms.image.depth_array_to_gray" class="doc doc-heading">
+<h2 id="transforms.image.depth_array_to_gray" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">depth_array_to_gray</span><span class="p">(</span><span class="n">depth</span><span class="p">,</span> <span class="n">valid_start</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">valid_end</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1213,7 +1342,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="numpy" href="https://numpy.org/doc/1.23/reference/index.html#module-numpy">np</a>.<a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/1.23/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
           </td>
-          <td><p>Depth array</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Depth array</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1223,7 +1356,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a></code>
           </td>
-          <td><p>Valid start. Defaults to 0.2.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Valid start. Defaults to 0.2.</p>
+            </div>
+          </td>
           <td>
                 <code>0.2</code>
           </td>
@@ -1233,7 +1370,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a></code>
           </td>
-          <td><p>Valid end. Defaults to 1.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Valid end. Defaults to 1.</p>
+            </div>
+          </td>
           <td>
                 <code>1</code>
           </td>
@@ -1243,7 +1384,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#float">float</a></code>
           </td>
-          <td><p>Scale. Defaults to 1.0.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Scale. Defaults to 1.0.</p>
+            </div>
+          </td>
           <td>
                 <code>1.0</code>
           </td>
@@ -1264,7 +1409,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="numpy" href="https://numpy.org/doc/1.23/reference/index.html#module-numpy">np</a>.<a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/1.23/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
           </td>
-          <td><p>np.ndarray: Depth array in gray levels</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>np.ndarray: Depth array in gray levels</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1348,10 +1497,10 @@
 
 
 
-<h1 id="transforms.image.depth_file_to_binary" class="doc doc-heading">
+<h2 id="transforms.image.depth_file_to_binary" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">depth_file_to_binary</span><span class="p">(</span><span class="n">depth_path</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1374,7 +1523,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Depth file path</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Depth file path</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1395,7 +1548,11 @@
 <td><code>bytes</code></td>          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#bytes">bytes</a></code>
           </td>
-          <td><p>Depth file as RGB image in binary</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Depth file as RGB image in binary</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1441,10 +1598,10 @@
 
 
 
-<h1 id="transforms.image.encode_rle" class="doc doc-heading">
+<h2 id="transforms.image.encode_rle" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">encode_rle</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1467,7 +1624,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>] | <a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>Mask as polygons / uncompressed RLE / RLE</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask as polygons / uncompressed RLE / RLE</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1477,7 +1638,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Image height</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Image height</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1487,7 +1652,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Image width</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Image width</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1508,7 +1677,11 @@
 <td><code>dict</code></td>          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>Mask as RLE</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask as RLE</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1568,10 +1741,10 @@
 
 
 
-<h1 id="transforms.image.image_to_binary" class="doc doc-heading">
+<h2 id="transforms.image.image_to_binary" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">image_to_binary</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;PNG&#39;</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1594,7 +1767,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="PIL.Image" href="https://pillow.readthedocs.io/en/stable/reference/Image.html#module-PIL.Image">Image</a>.<a class="autorefs autorefs-external" title="PIL.Image.Image" href="https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image">Image</a></code>
           </td>
-          <td><p>Image as Pillow</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Image as Pillow</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1604,7 +1781,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Image file extension. Defaults to "PNG".</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Image file extension. Defaults to "PNG".</p>
+            </div>
+          </td>
           <td>
                 <code>&#39;PNG&#39;</code>
           </td>
@@ -1625,7 +1806,11 @@
 <td><code>bytes</code></td>          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#bytes">bytes</a></code>
           </td>
-          <td><p>Image as binary</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Image as binary</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1673,10 +1858,10 @@
 
 
 
-<h1 id="transforms.image.image_to_thumbnail" class="doc doc-heading">
+<h2 id="transforms.image.image_to_thumbnail" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">image_to_thumbnail</span><span class="p">(</span><span class="n">image</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1699,7 +1884,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#bytes">bytes</a> | <a class="autorefs autorefs-external" title="PIL.Image" href="https://pillow.readthedocs.io/en/stable/reference/Image.html#module-PIL.Image">Image</a>.<a class="autorefs autorefs-external" title="PIL.Image.Image" href="https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image">Image</a></code>
           </td>
-          <td><p>Image as binary or as Pillow</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Image as binary or as Pillow</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1720,7 +1909,11 @@
 <td><code>bytes</code></td>          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#bytes">bytes</a></code>
           </td>
-          <td><p>Image thumbnail as binary</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Image thumbnail as binary</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1766,10 +1959,10 @@
 
 
 
-<h1 id="transforms.image.mask_to_polygons" class="doc doc-heading">
+<h2 id="transforms.image.mask_to_polygons" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">mask_to_polygons</span><span class="p">(</span><span class="n">mask</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1792,7 +1985,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="numpy" href="https://numpy.org/doc/1.23/reference/index.html#module-numpy">np</a>.<a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/1.23/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
           </td>
-          <td><p>Mask as NumPy array</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask as NumPy array</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1813,13 +2010,21 @@
 <td><code>list</code></td>          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a></code>
           </td>
-          <td><p>Mask as polygons</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask as polygons</p>
+            </div>
+          </td>
         </tr>
         <tr>
 <td><code>bool</code></td>          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#bool">bool</a></code>
           </td>
-          <td><p>Mask has holes</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask has holes</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1915,10 +2120,10 @@
 
 
 
-<h1 id="transforms.image.mask_to_rle" class="doc doc-heading">
+<h2 id="transforms.image.mask_to_rle" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">mask_to_rle</span><span class="p">(</span><span class="n">mask</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1941,7 +2146,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="PIL.Image" href="https://pillow.readthedocs.io/en/stable/reference/Image.html#module-PIL.Image">Image</a>.<a class="autorefs autorefs-external" title="PIL.Image.Image" href="https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image">Image</a></code>
           </td>
-          <td><p>Mask as Pillow or NumPy array</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask as Pillow or NumPy array</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1962,7 +2171,11 @@
 <td><code>dict</code></td>          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>Mask as RLE</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask as RLE</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -2004,10 +2217,10 @@
 
 
 
-<h1 id="transforms.image.polygons_to_rle" class="doc doc-heading">
+<h2 id="transforms.image.polygons_to_rle" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">polygons_to_rle</span><span class="p">(</span><span class="n">polygons</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -2030,7 +2243,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>]</code>
           </td>
-          <td><p>Mask as polygons</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask as polygons</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -2040,7 +2257,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Image height</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Image height</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -2050,7 +2271,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Image width</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Image width</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -2071,7 +2296,11 @@
 <td><code>dict</code></td>          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>Mask as RLE</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask as RLE</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -2117,10 +2346,10 @@
 
 
 
-<h1 id="transforms.image.rle_to_mask" class="doc doc-heading">
+<h2 id="transforms.image.rle_to_mask" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">rle_to_mask</span><span class="p">(</span><span class="n">rle</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -2143,7 +2372,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>Mask as RLE</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask as RLE</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -2164,7 +2397,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="numpy" href="https://numpy.org/doc/1.23/reference/index.html#module-numpy">np</a>.<a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/1.23/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
           </td>
-          <td><p>np.ndarray: Mask as NumPy array</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>np.ndarray: Mask as NumPy array</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -2204,10 +2441,10 @@
 
 
 
-<h1 id="transforms.image.rle_to_polygons" class="doc doc-heading">
+<h2 id="transforms.image.rle_to_polygons" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">rle_to_polygons</span><span class="p">(</span><span class="n">rle</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -2230,7 +2467,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>Mask as RLE</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask as RLE</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -2251,7 +2492,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>]</code>
           </td>
-          <td><p>list[list]: Mask as polygons</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>list[list]: Mask as polygons</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -2313,10 +2558,10 @@
 
 
 
-<h1 id="transforms.image.rle_to_urle" class="doc doc-heading">
+<h2 id="transforms.image.rle_to_urle" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">rle_to_urle</span><span class="p">(</span><span class="n">rle</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -2339,7 +2584,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>Mask as RLE</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask as RLE</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -2360,7 +2609,11 @@
 <td><code>dict</code></td>          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>Mask as uncompressed RLE</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask as uncompressed RLE</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -2418,10 +2671,10 @@
 
 
 
-<h1 id="transforms.image.urle_to_rle" class="doc doc-heading">
+<h2 id="transforms.image.urle_to_rle" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">urle_to_rle</span><span class="p">(</span><span class="n">urle</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -2444,7 +2697,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>Mask as uncompressed RLE</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask as uncompressed RLE</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -2465,7 +2722,11 @@
 <td><code>dict</code></td>          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>Mask as RLE</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Mask as RLE</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>

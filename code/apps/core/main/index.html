@@ -665,9 +665,68 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          main
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         main
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#apps.core.main.Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apps.core.main.create_app" class="md-nav__link">
+    create_app()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apps.core.main.load_dataset" class="md-nav__link">
+    load_dataset()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apps.core.main.load_dataset_stats" class="md-nav__link">
+    load_dataset_stats()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apps.core.main.load_library" class="md-nav__link">
+    load_library()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1077,7 +1136,13 @@
 <div class="doc doc-object doc-module">
 
 
-<a id="apps.core.main"></a>
+
+<h1 id="apps.core.main" class="doc doc-heading">
+          <code>apps.core.main</code>
+
+
+</h1>
+
   <div class="doc doc-contents first">
 
   
@@ -1095,11 +1160,11 @@
 
 
 
-<h1 id="apps.core.main.Settings" class="doc doc-heading">
+<h2 id="apps.core.main.Settings" class="doc doc-heading">
         <code>Settings</code>
 
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1124,7 +1189,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path">Path</a></code>
           </td>
-          <td><p>Dataset library directory</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset library directory</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1156,10 +1225,10 @@
 
 
 
-<h1 id="apps.core.main.create_app" class="doc doc-heading">
+<h2 id="apps.core.main.create_app" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">create_app</span><span class="p">(</span><span class="n">settings</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1182,7 +1251,11 @@
           <td>
                 <code><a class="autorefs autorefs-internal" title="apps.core.main.Settings" href="#apps.core.main.Settings">Settings</a></code>
           </td>
-          <td><p>Dataset Library</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset Library</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1203,31 +1276,51 @@
           <td>
                 <code><span title="fastapi.HTTPException">HTTPException</span></code>
           </td>
-          <td><p>404, Dataset is not found</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>404, Dataset is not found</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td>
                 <code><span title="fastapi.HTTPException">HTTPException</span></code>
           </td>
-          <td><p>404, Dataset stats are not found</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>404, Dataset stats are not found</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td>
                 <code><span title="fastapi.HTTPException">HTTPException</span></code>
           </td>
-          <td><p>404, Dataset is not found</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>404, Dataset is not found</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td>
                 <code><span title="fastapi.HTTPException">HTTPException</span></code>
           </td>
-          <td><p>404, Dataset is not found</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>404, Dataset is not found</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td>
                 <code><span title="fastapi.HTTPException">HTTPException</span></code>
           </td>
-          <td><p>404, Embedding dataset is not found</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>404, Embedding dataset is not found</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1245,7 +1338,11 @@
 <td><code>FastAPI</code></td>          <td>
                 <code><span title="fastapi.FastAPI">FastAPI</span></code>
           </td>
-          <td><p>Explorer app</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Explorer app</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1493,10 +1590,10 @@
 
 
 
-<h1 id="apps.core.main.load_dataset" class="doc doc-heading">
+<h2 id="apps.core.main.load_dataset" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">load_dataset</span><span class="p">(</span><span class="n">ds_id</span><span class="p">,</span> <span class="n">settings</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1519,7 +1616,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Dataset ID</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset ID</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1529,7 +1630,11 @@
           <td>
                 <code><a class="autorefs autorefs-internal" title="apps.core.main.Settings" href="#apps.core.main.Settings">Settings</a></code>
           </td>
-          <td><p>Dataset library</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset library</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1550,7 +1655,11 @@
 <td><code>Dataset</code></td>          <td>
                 <code><span title="pixano.core.Dataset">Dataset</span></code>
           </td>
-          <td><p>Dataset</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1596,10 +1705,10 @@
 
 
 
-<h1 id="apps.core.main.load_dataset_stats" class="doc doc-heading">
+<h2 id="apps.core.main.load_dataset_stats" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">load_dataset_stats</span><span class="p">(</span><span class="n">ds_id</span><span class="p">,</span> <span class="n">settings</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1622,7 +1731,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Dataset ID</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset ID</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1632,7 +1745,11 @@
           <td>
                 <code><a class="autorefs autorefs-internal" title="apps.core.main.Settings" href="#apps.core.main.Settings">Settings</a></code>
           </td>
-          <td><p>Dataset Library</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset Library</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1653,7 +1770,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>list[dict]: Dataset stats</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>list[dict]: Dataset stats</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1703,10 +1824,10 @@
 
 
 
-<h1 id="apps.core.main.load_library" class="doc doc-heading">
+<h2 id="apps.core.main.load_library" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">load_library</span><span class="p">(</span><span class="n">settings</span><span class="p">)</span></code>
 
-</h1>
+</h2>
 
 
   <div class="doc doc-contents ">
@@ -1729,7 +1850,11 @@
           <td>
                 <code><a class="autorefs autorefs-internal" title="apps.core.main.Settings" href="#apps.core.main.Settings">Settings</a></code>
           </td>
-          <td><p>Dataset library settings</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dataset library settings</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1750,7 +1875,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.10/library/stdtypes.html#list">list</a>[<span title="pixano.core.DatasetInfo">DatasetInfo</span>]</code>
           </td>
-          <td><p>list[DatasetInfo]: Dataset info files</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>list[DatasetInfo]: Dataset info files</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>

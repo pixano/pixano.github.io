@@ -948,68 +948,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          InferenceModel
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         InferenceModel
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#models.inference_model.InferenceModel.create_json" class="md-nav__link">
-    create_json()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#models.inference_model.InferenceModel.embedding_batch" class="md-nav__link">
-    embedding_batch()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#models.inference_model.InferenceModel.export_to_onnx" class="md-nav__link">
-    export_to_onnx()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#models.inference_model.InferenceModel.inference_batch" class="md-nav__link">
-    inference_batch()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#models.inference_model.InferenceModel.process_dataset" class="md-nav__link">
-    process_dataset()
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1134,13 +1075,7 @@
 <div class="doc doc-object doc-class">
 
 
-
-<h1 id="models.InferenceModel" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">models</span><span class="o">.</span><span class="n">InferenceModel</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">info</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span></code>
-
-</h1>
-
-
+<a id="models.InferenceModel"></a>
   <div class="doc doc-contents first">
       <p class="doc doc-class-bases">
         Bases: <code><a class="autorefs autorefs-external" title="abc.ABC" href="https://docs.python.org/3.10/library/abc.html#abc.ABC">ABC</a></code></p>
@@ -1334,10 +1269,10 @@
 
 
 
-<h2 id="models.inference_model.InferenceModel.create_json" class="doc doc-heading">
+<h1 id="models.inference_model.InferenceModel.create_json" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">create_json</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">spec_json</span><span class="p">,</span> <span class="n">num_elements</span><span class="p">)</span></code>
 
-</h2>
+</h1>
 
 
   <div class="doc doc-contents ">
@@ -1485,10 +1420,10 @@
 
 
 
-<h2 id="models.inference_model.InferenceModel.embedding_batch" class="doc doc-heading">
+<h1 id="models.inference_model.InferenceModel.embedding_batch" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">embedding_batch</span><span class="p">(</span><span class="n">batch</span><span class="p">,</span> <span class="n">view</span><span class="p">,</span> <span class="n">uri_prefix</span><span class="p">)</span></code>
 
-</h2>
+</h1>
 
 
   <div class="doc doc-contents ">
@@ -1604,10 +1539,10 @@
 
 
 
-<h2 id="models.inference_model.InferenceModel.export_to_onnx" class="doc doc-heading">
+<h1 id="models.inference_model.InferenceModel.export_to_onnx" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">export_to_onnx</span><span class="p">(</span><span class="n">library_dir</span><span class="p">)</span></code>
 
-</h2>
+</h1>
 
 
   <div class="doc doc-contents ">
@@ -1665,10 +1600,10 @@
 
 
 
-<h2 id="models.inference_model.InferenceModel.inference_batch" class="doc doc-heading">
+<h1 id="models.inference_model.InferenceModel.inference_batch" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">inference_batch</span><span class="p">(</span><span class="n">batch</span><span class="p">,</span> <span class="n">view</span><span class="p">,</span> <span class="n">uri_prefix</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span></code>
 
-</h2>
+</h1>
 
 
   <div class="doc doc-contents ">
@@ -1798,10 +1733,10 @@
 
 
 
-<h2 id="models.inference_model.InferenceModel.process_dataset" class="doc doc-heading">
+<h1 id="models.inference_model.InferenceModel.process_dataset" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">process_dataset</span><span class="p">(</span><span class="n">input_dir</span><span class="p">,</span> <span class="n">process_type</span><span class="p">,</span> <span class="n">views</span><span class="p">,</span> <span class="n">splits</span><span class="o">=</span><span class="p">[],</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span></code>
 
-</h2>
+</h1>
 
 
   <div class="doc doc-contents ">

@@ -1175,13 +1175,13 @@
 <p><img alt="Pixano Annotator Element View" src="../../assets/user/annotator_elementview.png" /></p>
 <p>The selected element (image or images for multi-view datasets) is displayed.</p>
 <p>You can zoom in and out with the mouse wheel.</p>
-<p>You can grab and move images with the the middle click or with the <strong><em>Pan</em></strong> tool available in the left <em>toolbar</em>. </p>
+<p>You can grab and move images with the middle click or with the <strong><em>Pan</em></strong> tool available in the left-hand <em>toolbar</em>. </p>
 <p>You can double click on an image to move it above other images.</p>
-<p>Annotations, in form of segmentations mask, are displayed.
+<p>Annotations, in form of segmentation mask, are displayed.
 Each object category is given a color.</p>
-<p>On the top of the image, when you have an input Tool selected, a panel is displayed that allow to choose a category.</p>
+<p>On the top of the image, when you have an input Tool selected, a panel is displayed that allows to choose a category.</p>
 <h3 id="left-toolbar">Left toolbar</h3>
-<p>A <em>toolbar</em> is available on the left side of the page with the following tools:</p>
+<p>A <em>toolbar</em> is available on the left-hand side of the page with the following tools:</p>
 <ul>
 <li><strong><em>Pan</em></strong>: Allows you to grab and move an image</li>
 <li><strong><em>Points</em></strong>: Allows you to place input points to interactively segment your image<ul>
@@ -1191,21 +1191,19 @@ Each object category is given a color.</p>
 <li>You can click and hold on any point to relocate it</li>
 </ul>
 </li>
-<li><strong><em>Rectangle</em></strong>: Allows you to draw rectangles to interactively segment your image<ul>
+<li><strong><em>Rectangle</em></strong>: Allows you to draw rectangles approximatively around the objects of interest to interactively segment them<ul>
 <li>You can click and drag on the image to draw a rectangle</li>
-<li>There can only be one rectangle at a time, so drawing a new rectangle will discard the previous one</li>
+<li>There can only be one rectangle at a time, so drawing a new rectangle will discard the previous one. You have to validate the obtained segmentation, if satisfactory, before drawing a new rectangle</li>
 </ul>
 </li>
 </ul>
 <p>The <strong><em>Points</em></strong> and <strong><em>Rectangle</em></strong> tools depend on an ONNX segmentation model you have to provide. Please look at the interactive annotation documentation and notebook for more information. </p>
 <p><em>More tools will be coming soon.</em></p>
 <h3 id="center-toolbar">Center toolbar</h3>
-<p>When an annotation tool is selected, a <em>toolbar</em> is available on the center on the page with the following tools:</p>
-<ul>
-<li>A <em>text box</em> to enter the label name for your annotation or select the label from the list of existing labels</li>
-<li>If the <strong><em>Points</em></strong> tool is selected, a <strong>+</strong> icon and a <strong>-</strong> icon to quickly switch between positive and negative points</li>
-<li>A <em>Validate</em> icon to validate your annotation with the entered label</li>
-</ul>
+<p>When an annotation tool is selected, a <em>toolbar</em> is available at the center on the page.</p>
+<p>Enter the label name for your annotation in the text box or select the label from the list of existing labels.</p>
+<p>If the <strong><em>Points</em></strong> tool is selected, a <strong>+</strong> icon and a <strong>-</strong> icon allow to quickly switch between positive and negative points</p>
+<p>Validate your annotation with the entered label by cliking on the Validate icon, or press <em>Enter</em> key.</p>
 <h3 id="right-toolbar">Right toolbar</h3>
 <p>A <em>toolbar</em> is available on the right side of the page with the following tabs:</p>
 <ul>
@@ -1219,20 +1217,21 @@ Each object category is given a color.</p>
 <li><strong><em>Dataset</em></strong>: This tab allows you to navigate through the dataset<ul>
 <li>Each element of the dataset is displayed with its ID and its thumbnail</li>
 <li>The list will automatically expand as you scroll down</li>
-<li>You can click on any element to change current element</li>
+<li>You can click on any element to change the current element</li>
 </ul>
 </li>
 </ul>
 <h3 id="annotating">Annotating</h3>
 <p><img alt="Pixano Annotator Annotate" src="../../assets/user/annotator_annotation.png" /></p>
 <p>You can currently annotate with the <strong><em>Points</em></strong> (<strong>+</strong> and <strong>-</strong>), and <strong><em>Rectangle</em></strong> tools available in the left toolbar as described above.</p>
-<p>When using these tools, the generated annotation will be displayed in green. You can use the tools together to refine your annotation.</p>
-<p>You can press the <em>Enter</em> key to validate your annotation, or the <em>Esc</em> key to reset all your <strong><em>Points</em></strong> and <strong><em>Rectangle</em></strong> inputs.</p>
+<p>When using these tools, the generated annotation will be displayed in green. You can use both tools together to refine your annotation.</p>
+<p>You can press the <em>Enter</em> key or click the Validate icon of the center toolbar to validate your annotation.
+You can press the <em>Esc</em> key to reset all your <strong><em>Points</em></strong> and <strong><em>Rectangle</em></strong> inputs.</p>
 <h3 id="saving">Saving</h3>
-<p>To save your annotations, a <em>Save</em> icon is available in the top right as well. It will be highlighted if there are unsaved changes.</p>
+<p>To save your annotations, a <em>Save</em> icon is available in the top right-hand corner. It will be highlighted if there are unsaved changes.</p>
 <p>If you try to go back to the home page or change element with unsaved changes, you will see a confirmation window. You can choose "OK" to discard your changes, or cancel to be able to go back save them.</p>
 <h3 id="going-home">Going home</h3>
-<p>To go back to the home page, click on "Pixano Annotator" in the top left or on the <em>Close</em> icon in the top right.</p>
+<p>To go back to the home page, click on "Pixano Annotator" in the top left-and corner or on the <em>Close</em> icon in the top right-hand corner.</p>
 
 
 

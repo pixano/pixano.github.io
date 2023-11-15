@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../assets/pixano.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
     
     
       
@@ -24,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4b4a2bd9.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -48,6 +48,8 @@
     
       <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
     
+      <link rel="stylesheet" href="../../../assets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -65,7 +67,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
   
     
     
@@ -77,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#api.items" class="md-skip">
+        <a href="#pixano.api.items" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +127,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
@@ -135,7 +137,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
@@ -378,9 +380,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+    
       
-        
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
         
         
         
@@ -399,7 +405,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_2">
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -571,9 +578,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
       
-        
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
         
         
         
@@ -592,7 +603,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_3">
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -619,14 +631,16 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
+          
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
             
   
@@ -689,14 +703,16 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
+          
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
             
   
@@ -787,35 +803,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#api.items.ItemFeature" class="md-nav__link">
+  <a href="#pixano.api.items.ItemFeature" class="md-nav__link">
     ItemFeature
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#api.items.load_item_details" class="md-nav__link">
+  <a href="#pixano.api.items.load_item_details" class="md-nav__link">
     load_item_details()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#api.items.load_item_embeddings" class="md-nav__link">
+  <a href="#pixano.api.items.load_item_embeddings" class="md-nav__link">
     load_item_embeddings()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#api.items.load_items" class="md-nav__link">
+  <a href="#pixano.api.items.load_items" class="md-nav__link">
     load_items()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#api.items.save_item_details" class="md-nav__link">
+  <a href="#pixano.api.items.save_item_details" class="md-nav__link">
     save_item_details()
   </a>
   
@@ -858,14 +874,16 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
         
+          
           <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
             
   
@@ -896,14 +914,16 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_1" >
         
+          
           <label class="md-nav__link" for="__nav_3_4_1" id="__nav_3_4_1_label" tabindex="0">
             
   
@@ -982,14 +1002,16 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_3" >
         
+          
           <label class="md-nav__link" for="__nav_3_4_3" id="__nav_3_4_3_label" tabindex="0">
             
   
@@ -1112,14 +1134,16 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
+          
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
             
   
@@ -1346,14 +1370,16 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
         
+          
           <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
             
   
@@ -1426,14 +1452,16 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_3" >
         
+          
           <label class="md-nav__link" for="__nav_3_6_3" id="__nav_3_6_3_label" tabindex="0">
             
   
@@ -1536,8 +1564,8 @@
       
         
       
-        
-      
+    
+    
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -1545,9 +1573,9 @@
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_5" >
         
+          
           <label class="md-nav__link" for="__nav_3_6_5" id="__nav_3_6_5_label" tabindex="0">
             
   
@@ -1646,26 +1674,6 @@
 
               
             
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../data/importers/nuscenes_importer/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    nuscenes_importer
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1692,6 +1700,8 @@
       
         
       
+    
+    
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -1699,9 +1709,9 @@
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
         
+          
           <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
             
   
@@ -1766,14 +1776,16 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
         
+          
           <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
             
   
@@ -1929,8 +1941,8 @@
 
 
 
-<h1 id="api.items" class="doc doc-heading">
-          <code>api.items</code>
+<h1 id="pixano.api.items" class="doc doc-heading">
+          <code>pixano.api.items</code>
 
 
 </h1>
@@ -1953,16 +1965,15 @@
 
 
 
-<h2 id="api.items.ItemFeature" class="doc doc-heading">
-          <code>ItemFeature</code>
-
+<h2 id="pixano.api.items.ItemFeature" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">ItemFeature</span><span class="p">(</span><span class="n">__pydantic_self__</span><span class="p">,</span> <span class="o">**</span><span class="n">data</span><span class="p">)</span></code>
 
 </h2>
 
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
-            Bases: <code><a class="autorefs autorefs-external" title="pydantic.BaseModel" href="https://docs.pydantic.dev/2.0/api/main/#pydantic.main.BaseModel">BaseModel</a></code></p>
+            Bases: <code><a class="autorefs autorefs-external" title="pydantic.BaseModel" href="https://docs.pydantic.dev/2.4/api/base_model/#pydantic.BaseModel">BaseModel</a></code></p>
 
   
       <p>Feature</p>
@@ -2014,7 +2025,39 @@
         </tr>
     </tbody>
   </table>
+  
+      <p>Raises <a class="autorefs autorefs-external" href="https://docs.pydantic.dev/2.4/api/pydantic_core/#pydantic_core.ValidationError"><code>ValidationError</code></a> if the input data cannot be
+validated to form a valid model.</p>
+<p><code>__init__</code> uses <code>__pydantic_self__</code> instead of the more common <code>self</code> for the first arg to
+allow <code>self</code> as a field name.</p>
 
+                <details class="quote">
+                  <summary>Source code in <code></code></summary>
+                  <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">__pydantic_self__</span><span class="p">,</span> <span class="o">**</span><span class="n">data</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>  <span class="c1"># type: ignore</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Create a new model by parsing and validating input data from keyword arguments.</span>
+
+<span class="sd">    Raises [`ValidationError`][pydantic_core.ValidationError] if the input data cannot be</span>
+<span class="sd">    validated to form a valid model.</span>
+
+<span class="sd">    `__init__` uses `__pydantic_self__` instead of the more common `self` for the first arg to</span>
+<span class="sd">    allow `self` as a field name.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># `__tracebackhide__` tells pytest and some other tools to omit this function from tracebacks</span>
+    <span class="n">__tracebackhide__</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="n">__pydantic_self__</span><span class="o">.</span><span class="n">__pydantic_validator__</span><span class="o">.</span><span class="n">validate_python</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">self_instance</span><span class="o">=</span><span class="n">__pydantic_self__</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+                </details>
 
   
 
@@ -2043,7 +2086,7 @@
 
 
 
-<h2 id="api.items.load_item_details" class="doc doc-heading">
+<h2 id="pixano.api.items.load_item_details" class="doc doc-heading">
           <code class="highlight language-python"><span class="n">load_item_details</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">item_id</span><span class="p">)</span></code>
 
 </h2>
@@ -2069,7 +2112,7 @@
         <tr>
           <td><code>dataset</code></td>
           <td>
-                <code><span title="pixano.data.Dataset">Dataset</span></code>
+                <code><a class="autorefs autorefs-internal" title="pixano.data.Dataset" href="../../data/dataset/#pixano.data.dataset.Dataset">Dataset</a></code>
           </td>
           <td>
             <div class="doc-md-description">
@@ -2123,7 +2166,9 @@
 
           <details class="quote">
             <summary>Source code in <code>pixano/api/items.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">187</span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
 <span class="normal">188</span>
 <span class="normal">189</span>
 <span class="normal">190</span>
@@ -2243,9 +2288,7 @@
 <span class="normal">304</span>
 <span class="normal">305</span>
 <span class="normal">306</span>
-<span class="normal">307</span>
-<span class="normal">308</span>
-<span class="normal">309</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">load_item_details</span><span class="p">(</span><span class="n">dataset</span><span class="p">:</span> <span class="n">Dataset</span><span class="p">,</span> <span class="n">item_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="normal">307</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">load_item_details</span><span class="p">(</span><span class="n">dataset</span><span class="p">:</span> <span class="n">Dataset</span><span class="p">,</span> <span class="n">item_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Load dataset item details</span>
 
 <span class="sd">    Args:</span>
@@ -2380,7 +2423,7 @@
 
 
 
-<h2 id="api.items.load_item_embeddings" class="doc doc-heading">
+<h2 id="pixano.api.items.load_item_embeddings" class="doc doc-heading">
           <code class="highlight language-python"><span class="n">load_item_embeddings</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">item_id</span><span class="p">)</span></code>
 
 </h2>
@@ -2406,7 +2449,7 @@
         <tr>
           <td><code>dataset</code></td>
           <td>
-                <code><span title="pixano.data.Dataset">Dataset</span></code>
+                <code><a class="autorefs autorefs-internal" title="pixano.data.Dataset" href="../../data/dataset/#pixano.data.dataset.Dataset">Dataset</a></code>
           </td>
           <td>
             <div class="doc-md-description">
@@ -2460,7 +2503,9 @@
 
           <details class="quote">
             <summary>Source code in <code>pixano/api/items.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">312</span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span>
 <span class="normal">313</span>
 <span class="normal">314</span>
 <span class="normal">315</span>
@@ -2501,8 +2546,7 @@
 <span class="normal">350</span>
 <span class="normal">351</span>
 <span class="normal">352</span>
-<span class="normal">353</span>
-<span class="normal">354</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">load_item_embeddings</span><span class="p">(</span><span class="n">dataset</span><span class="p">:</span> <span class="n">Dataset</span><span class="p">,</span> <span class="n">item_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="normal">353</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">load_item_embeddings</span><span class="p">(</span><span class="n">dataset</span><span class="p">:</span> <span class="n">Dataset</span><span class="p">,</span> <span class="n">item_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Load dataset item embeddings</span>
 
 <span class="sd">    Args:</span>
@@ -2534,6 +2578,7 @@
         <span class="n">embeddings</span><span class="p">[</span><span class="n">emb_source</span><span class="p">]</span> <span class="o">=</span> <span class="n">media_scanner</span><span class="o">.</span><span class="n">to_table</span><span class="p">()</span><span class="o">.</span><span class="n">to_pylist</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
 
     <span class="c1"># Return first embeddings for first table containing SAM (Segment Anything Model)</span>
+    <span class="c1"># TODO: Add embeddings table select option</span>
     <span class="k">for</span> <span class="n">emb_source</span> <span class="ow">in</span> <span class="n">embeddings</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
         <span class="k">if</span> <span class="s2">&quot;SAM&quot;</span> <span class="ow">in</span> <span class="n">emb_source</span><span class="p">:</span>
             <span class="c1"># Keep only embedding fields</span>
@@ -2557,7 +2602,7 @@
 
 
 
-<h2 id="api.items.load_items" class="doc doc-heading">
+<h2 id="pixano.api.items.load_items" class="doc doc-heading">
           <code class="highlight language-python"><span class="n">load_items</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 </h2>
@@ -2583,7 +2628,7 @@
         <tr>
           <td><code>dataset</code></td>
           <td>
-                <code><span title="pixano.data.Dataset">Dataset</span></code>
+                <code><a class="autorefs autorefs-internal" title="pixano.data.Dataset" href="../../data/dataset/#pixano.data.dataset.Dataset">Dataset</a></code>
           </td>
           <td>
             <div class="doc-md-description">
@@ -2637,7 +2682,9 @@
 
           <details class="quote">
             <summary>Source code in <code>pixano/api/items.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 87</span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
 <span class="normal"> 88</span>
 <span class="normal"> 89</span>
 <span class="normal"> 90</span>
@@ -2732,9 +2779,7 @@
 <span class="normal">179</span>
 <span class="normal">180</span>
 <span class="normal">181</span>
-<span class="normal">182</span>
-<span class="normal">183</span>
-<span class="normal">184</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">load_items</span><span class="p">(</span><span class="n">dataset</span><span class="p">:</span> <span class="n">Dataset</span><span class="p">,</span> <span class="n">params</span><span class="p">:</span> <span class="n">AbstractParams</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">AbstractPage</span><span class="p">:</span>
+<span class="normal">182</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">load_items</span><span class="p">(</span><span class="n">dataset</span><span class="p">:</span> <span class="n">Dataset</span><span class="p">,</span> <span class="n">params</span><span class="p">:</span> <span class="n">AbstractParams</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">AbstractPage</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Load dataset items</span>
 
 <span class="sd">    Args:</span>
@@ -2844,7 +2889,7 @@
 
 
 
-<h2 id="api.items.save_item_details" class="doc doc-heading">
+<h2 id="pixano.api.items.save_item_details" class="doc doc-heading">
           <code class="highlight language-python"><span class="n">save_item_details</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">item_id</span><span class="p">,</span> <span class="n">item_details</span><span class="p">)</span></code>
 
 </h2>
@@ -2870,7 +2915,7 @@
         <tr>
           <td><code>dataset</code></td>
           <td>
-                <code><span title="pixano.data.Dataset">Dataset</span></code>
+                <code><a class="autorefs autorefs-internal" title="pixano.data.Dataset" href="../../data/dataset/#pixano.data.dataset.Dataset">Dataset</a></code>
           </td>
           <td>
             <div class="doc-md-description">
@@ -2914,7 +2959,8 @@
 
           <details class="quote">
             <summary>Source code in <code>pixano/api/items.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">357</span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">356</span>
+<span class="normal">357</span>
 <span class="normal">358</span>
 <span class="normal">359</span>
 <span class="normal">360</span>
@@ -3076,8 +3122,7 @@
 <span class="normal">516</span>
 <span class="normal">517</span>
 <span class="normal">518</span>
-<span class="normal">519</span>
-<span class="normal">520</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">save_item_details</span><span class="p">(</span>
+<span class="normal">519</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">save_item_details</span><span class="p">(</span>
     <span class="n">dataset</span><span class="p">:</span> <span class="n">Dataset</span><span class="p">,</span>
     <span class="n">item_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">item_details</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span>
@@ -3267,10 +3312,10 @@
         </div>
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-            
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-            Back to top
-          </button>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -3329,10 +3374,11 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.indexes", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.indexes", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.81fa17fe.min.js"></script>
       
     
   </body>

@@ -55,7 +55,7 @@ jobs:
             mkdocs-material-
 
       - name: Install dependencies
-        run: pip install .[documentation]
+        run: pip install .
 
       - name: Publish documentation website
         run: mkdocs gh-deploy --force

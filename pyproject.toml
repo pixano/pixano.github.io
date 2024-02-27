@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pixano-documentation"
+version = "1.0.0"
+description = 'Documentation website for Pixano' 
+readme = "README.md"
+requires-python = "~=3.10"
+license = "CeCILL-C"
+authors = [{name = "Pixano Developers", email = "pixano@cea.fr"}]
+keywords = [
+  "computer vision",
+  "deep learning",
+  "machine learning",
+  "data visualization",
+  "data annotation"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3.10",
+  "License :: CeCILL-C Free Software License Agreement (CECILL-C)",
+]
+dependencies = [
+  "mkdocs-material ~= 9.4.0",
+  "mkdocstrings-python ~= 1.7.0",
+  "mkdocs-gen-files ~= 0.5.0",
+  "mkdocs-literate-nav ~= 0.6.0",
+]
+
+[project.urls]
+Documentation = "https://github.com/pixano/pixano.github.io#readme"
+Issues = "https://github.com/pixano/pixano.github.io/issues"
+Source = "https://github.com/pixano/pixano.github.io"

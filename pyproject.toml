@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pixano-documentation"
-version = "1.0.0"
+dynamic = ["version"]
 description = 'Documentation website for Pixano' 
 readme = "README.md"
 requires-python = "~=3.10"
@@ -33,3 +33,6 @@ dependencies = [
 Documentation = "https://github.com/pixano/pixano.github.io#readme"
 Issues = "https://github.com/pixano/pixano.github.io/issues"
 Source = "https://github.com/pixano/pixano.github.io"
+
+[tool.hatch.version]
+path = "pixano_documentation/__version__.py"

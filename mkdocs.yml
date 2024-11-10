@@ -54,4 +54,3 @@ plugins:
 nav:
   - "Home": index.md
   - "Pixano": https://pixano.github.io/pixano/
-  - "Pixano Inference": https://pixano.github.io/pixano-inference/

@@ -11,8 +11,8 @@ Pixano is a library of data-centric AI building blocks for computer vision appli
 
 The Pixano app for smarter exploration and annotation of your datasets.
 
-**[API reference](https://pixano.github.io/pixano/stable/api_reference/)**
+**[API reference](https://pixano.github.io/pixano/latest/api_reference/)**
 
-**[Getting started](https://pixano.github.io/pixano/stable/getting_started/)**
+**[Getting started](https://pixano.github.io/pixano/latest/getting_started/)**
 
-**[Tutorials](https://pixano.github.io/pixano/stable/tutorials/)**
+**[Tutorials](https://pixano.github.io/pixano/latest/tutorials/)**

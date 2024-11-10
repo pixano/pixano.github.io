@@ -11,14 +11,8 @@ Pixano is a library of data-centric AI building blocks for computer vision appli
 
 The Pixano app for smarter exploration and annotation of your datasets.
 
-**[Getting started](https://pixano.github.io/pixano/getting_started/)**
+**[API reference](https://pixano.github.io/pixano/stable/api_reference/)**
 
-**[API reference](https://pixano.github.io/pixano/api_reference/)**
+**[Getting started](https://pixano.github.io/pixano/stable/getting_started/)**
 
-## Pixano Inference
-
-The Pixano library of AI models for pre-annotation, interactive segmentation, and semantic search.
-
-**[Getting started](https://pixano.github.io/pixano-inference/getting_started/)**
-
-**[API reference](https://pixano.github.io/pixano-inference/api_reference/)**
+**[Tutorials](https://pixano.github.io/pixano/stable/tutorials/)**

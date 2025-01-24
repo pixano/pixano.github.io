@@ -16,3 +16,12 @@ The Pixano app for smarter exploration and annotation of your datasets.
 **[Getting started](https://pixano.github.io/pixano/latest/getting_started/)**
 
 **[Tutorials](https://pixano.github.io/pixano/latest/tutorials/)**
+
+
+## Pixano Inference
+
+The Pixano library of AI models for pre-annotation, interactive segmentation, and semantic search.
+
+**[Getting started](https://pixano.github.io/pixano-inference/latest/getting_started/)**
+
+**[API reference](https://pixano.github.io/pixano-inference/latest/api_reference/)**

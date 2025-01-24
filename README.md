@@ -10,6 +10,7 @@
 **_Under active development, subject to API change_**
 
 [![Pixano](https://img.shields.io/github/v/release/pixano/pixano?label=pixano&logo=github)](https://github.com/pixano/pixano/releases)
+[![Pixano Inference](https://img.shields.io/github/v/release/pixano/pixano-inference?label=pixano-inference&logo=github)](https://github.com/pixano/pixano-inference/releases)
 [![Documentation](https://img.shields.io/website?url=https%3A%2F%2Fpixano.github.io%2F&up_message=online&down_message=offline&label=docs)](https://pixano.github.io)
 [![License](https://img.shields.io/badge/license-CeCILL--C-blue.svg)](LICENSE)
 
